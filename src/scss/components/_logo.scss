@@ -1,0 +1,31 @@
+.logo{
+  display:flex;
+  align-items:center;
+
+  .span{
+    margin-right: 10px;
+    font-size: 2rem;
+
+  }
+
+  .material-icons{
+    font-size: var(--ff-normal);
+  }
+}
+
+@media screen and (min-width: $vw-medium){
+  .logo {
+    flex-direction: column;
+
+    span {
+      font-size: 4rem;
+      margin-bottom: 10px;
+    }
+
+    &:hover {
+      color: var(--color-bg-primary);
+      transition: .3s all;
+    }
+  }
+
+}
